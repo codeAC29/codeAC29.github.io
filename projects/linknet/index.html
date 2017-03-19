@@ -67,6 +67,7 @@
                 It is capable of giving real-time performance on both GPUs and embedded device such as NVIDIA TX1.
                 This network was designed by members of <a href="https://e-lab.github.io">e-Lab</a> at <a href="http://www.purdue.edu">Purdue University</a>.
                 Its architecture has been explained in the following blocks.
+                LinkNet can process an input image of resolution 1280x720 on TX1 and Titan X at a rate of 2 fps and 19 fps respectively.
                 Training and testing scripts can be accessed using the Github <a href="">link</a>.
                 </p>
             </div>
@@ -77,11 +78,11 @@
             <div class="row">
                 <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
                     <h5>VIDEO DEMONSTRATION ON CITYSCAPES DATASET [1]</h5>
-                    <iframe width="550" height="309" src="https://www.youtube.com/embed/FGzodQt7y4Q" frameborder="0" allowfullscreen></iframe>
+                    <iframe width="550" height="309" src="https://www.youtube.com/embed/1QIWtO2ync8" frameborder="0" allowfullscreen></iframe>
                 </div>
                 <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
                     <h5>VIDEO DEMONSTRATION ON CAMVID DATASET [2]</h5>
-                    <iframe width="550" height="309" src="https://www.youtube.com/embed/FGzodQt7y4Q" frameborder="0" allowfullscreen></iframe>
+                    <iframe width="550" height="309" src="https://www.youtube.com/embed/M8B3jhvdV3k" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -119,6 +120,7 @@
                         <p align="justify">
                         In encoder and decoder block shown in the right, input and output feature maps for each layer can be calculated using: <b><i>n = 64x2^i</b></i>, where <b><i>i</b></i> the block index.
                         The first encoder block does not perform strided convolution and every convolution layer is followed by batch-normalization and ReLU as non-linearity.
+                        The encoder architecture is the same as that of ResNet-18 [3].
                         </p>
                         </br>
                         <table>
@@ -236,21 +238,15 @@
     <section class="testimonial-slider section-padding text-center" id="contact">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <div class="flexslider">
-                        <ul class="slides">
-                            <li>
+                <div class="col-md-6">
                                 <div class="avatar"><img src="img/abhi.jpg" alt="Sedna Testimonial Avatar"></div>
                                 <h2>Abhishek Chaurasia</h2>
                                 <p class="author">aabhish (at) purdue (dot) edu</p>
-                            </li>
-                            <li>
+                </div>
+                <div class="col-md-6">
                                 <div class="avatar"><img src="img/euge.png" alt="Sedna Testimonial Avatar"></div>
                                 <h2>Eugenio Culurciello</h2>
                                 <p class="author">euge (at) purdue (dot) edu</p>
-                            </li>
-                        </ul>
-                    </div>
                 </div>
             </div>
         </div>
@@ -258,9 +254,15 @@
     <section class="sign-up section-padding text-center" id="download">
         <div class="container">
             <div class="row" align="left">
+                <h3>Acknowledgement</h3>
+                <p>
+                This work was partly supported by the Office of Naval Research (ONR) grants N00014-12-1-0167, N00014-15-1-2791 and MURI N00014-10-1-0278.
+                We gratefully acknowledge the support of NVIDIA Corporation with the donation of the TX1, Titan X GPUs used for this research.
+                </p>
                 <h3>References</h3>
                 <p>[1] M. Cordts, M. Omran, S. Ramos, T. Rehfeld, M. Enzweiler, R. Benenson, U. Franke, S. Roth, and B. Schiele, “The cityscapes dataset for semantic urban scene understanding,” in Proc. of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2016.</p>
                 <p>[2] G. J. Brostow, J. Shotton, J. Fauqueur, and R. Cipolla, “Segmentation and recognition using structure from motion point clouds,” in ECCV (1), 2008, pp. 44–57.</p>
+                <p>[3] K. He, X. Zhang, S. Ren, and J. Sun, “Deep residual learning for image recognition,” arXiv preprint arXiv:1512.03385, 2015.</p>
             </div>
         </div>
     </section>
@@ -271,6 +273,8 @@
                     <a href="#top" class="top"><i class="fa fa-angle-up"></i></a>
                 </div>
             </div>
+            <br>
+            <p><font color="white">&copy Abhishek Chaurasia 2017. All rights reserved.</font></p>
         </div>
     </section>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>

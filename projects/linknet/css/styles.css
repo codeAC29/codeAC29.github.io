@@ -522,7 +522,7 @@ Features-stack
     z-index: 2; }
   .features .device-showcase {
     position: absolute;
-    bottom: -200px;
+    bottom: -165px;
     right: 61%; }
 
 .features .responsive-feature-img, .features-extra .responsive-feature-img {
